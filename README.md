@@ -1,57 +1,58 @@
-# Sample Hardhat 3 Beta Project (`node:test` and `viem`)
+# ERC-20 Token Faucet DApp (Sepolia Testnet)
 
-This project showcases a Hardhat 3 Beta project using the native Node.js test runner (`node:test`) and the `viem` library for Ethereum interactions.
+A full-stack decentralized application (DApp) that allows users to claim free FTK (Faucet Tokens). This project features an ERC-20 smart contract, a Faucet contract with a 24-hour rate limit, and a React frontend integrated with Viem.
 
-To learn more about the Hardhat 3 Beta, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3 Beta](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+## 🚀 Live Links
 
-## Project Overview
+* Live DApp: <https://erc20-faucet-dapp-root-q8s5.vercel.app/>
+* Video Demo: [Insert Your YouTube/Loom Link Here]
 
-This example project includes:
+## 🛠 Deployed Addresses (Sepolia)
 
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using [`node:test`](nodejs.org/api/test.html), the new Node.js native test runner, and [`viem`](https://viem.sh/).
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
+* FauceterToken (ERC-20): 0x6242FfE329996a7C17898e441C7115d59E56b0b5
+* Faucet Contract: 0x7E59A5e1Dc4abfDD83A55d8C0402F3DA315d5788
 
-## Usage
+## 🧠 Skills & Features
 
-### Running Tests
+* Smart Contract Security: Implemented ERC-20 standards using OpenZeppelin.
+* Rate Limiting: On-chain logic prevents a single wallet from claiming tokens more than once every 24 hours.
+* Secure Key Management: Utilized Hardhat Keystore to manage deployment secrets without exposing private keys in code.
+* Frontend Integration: Built with React, TypeScript, and Vite, using Viem for high-performance blockchain interactions.
 
-To run all the tests in the project, execute the following command:
+## 💻 Tech Stack
 
-```shell
-npx hardhat test
-```
+* Blockchain: Solidity, Hardhat, OpenZeppelin
+* Frontend: React (TS), Vite, Viem
+* Deployment: Hardhat Ignition & Vercel
 
-You can also selectively run the Solidity or `node:test` tests:
+## ⚙️ Local Setup
 
-```shell
-npx hardhat test solidity
-npx hardhat test nodejs
-```
+### Prerequisites
 
-### Make a deployment to Sepolia
+* Node.js (v18+)
+* MetaMask Browser Extension
 
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
+### Installation
 
-To run the deployment to a local chain:
+1. Clone the repo:
+   git clone <https://github.com/Srikar-jayanthi/erc20-faucet-dapp-root.git>
+   cd erc20-faucet-dapp-root
 
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
+2. Install dependencies:
+   npm install
+   cd frontend && npm install
 
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
+3. Run locally:
+   npm run dev
 
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
+## 📝 License
 
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
+This project is for educational purposes under the MIT License.
 
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
+---
 
-After setting the variable, you can run the deployment with the Sepolia network:
+### Final Submission Steps
 
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
+1. Paste this entire block into your README.md file.
+2. Replace the [Insert Your YouTube/Loom Link Here] text with your actual video link.
+3. Submit your GitHub Repo URL, Vercel Live URL, and Video Link to Partnr.
