@@ -1,0 +1,29 @@
+# Security (Crucial for submission)
+.env
+.hardhat/keystore
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Hardhat Outputs
+artifacts/
+cache/
+/types/
+/coverage/
+coverage.json
+
+# Compilation and Build Outputs
+dist/
+frontend/dist/
+/bundle/
+
+# IDE and OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
