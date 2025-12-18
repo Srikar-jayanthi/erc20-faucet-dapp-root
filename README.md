@@ -4,8 +4,8 @@ A full-stack decentralized application (DApp) that allows users to claim free FT
 
 ## 🚀 Live Links
 
-* Live DApp: <https://erc20-faucet-dapp-root-q8s5.vercel.app/>
-* Video Demo: [Insert Your YouTube/Loom Link Here]
+* Live DApp: https://erc20-faucet-dapp-root-q8s5.vercel.app/
+* Video Demo: https://drive.google.com/file/d/1UJ25BQszTZQMarOtHqFsdioChaONAKGL/view?usp=sharing
 
 ## 🛠 Deployed Addresses (Sepolia)
 
@@ -35,7 +35,7 @@ A full-stack decentralized application (DApp) that allows users to claim free FT
 ### Installation
 
 1. Clone the repo:
-   git clone <https://github.com/Srikar-jayanthi/erc20-faucet-dapp-root.git>
+   git clone https://github.com/Srikar-jayanthi/erc20-faucet-dapp-root.git
    cd erc20-faucet-dapp-root
 
 2. Install dependencies:
