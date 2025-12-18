@@ -30,11 +30,11 @@ A full-stack decentralized application (DApp) that allows users to claim free FT
 ```mermaid
 graph TD
     User((User)) -->|Connect Wallet| ReactApp[React Frontend]
-    ReactApp -->|Check Health| HealthEndpoint[/health]
-    ReactApp -->|window.__EVAL__| Grader[Automated Evaluator]
+    ReactApp -->|Check Health| HealthEndpoint["/health"]
+    ReactApp -->|"window.__EVAL__"| Grader[Automated Evaluator]
     ReactApp -->|requestTokens| FaucetContract[Faucet Smart Contract]
     FaucetContract -->|Transfer FTK| User
-    FaucetContract -.->|24h Rate Limit| User
+    FaucetContract -.->|"24h Rate Limit"| User
 
 ## ⚙️ Local Setup
 
