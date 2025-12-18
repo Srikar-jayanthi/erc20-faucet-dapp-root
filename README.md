@@ -25,6 +25,14 @@ A full-stack decentralized application (DApp) that allows users to claim free FT
 * Frontend: React (TS), Vite, Viem
 * Deployment: Hardhat Ignition & Vercel
 
+graph TD
+    User((User)) -->|Connect Wallet| ReactApp[React Frontend]
+    ReactApp -->|Check Health| HealthEndpoint[/health]
+    ReactApp -->|window.__EVAL__| Grader[Automated Evaluator]
+    ReactApp -->|requestTokens| FaucetContract[Faucet Smart Contract]
+    FaucetContract -->|Transfer FTK| User
+    FaucetContract -.->|24h Rate Limit| User
+
 ## ⚙️ Local Setup
 
 ### Prerequisites
