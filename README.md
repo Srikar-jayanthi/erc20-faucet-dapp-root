@@ -25,6 +25,9 @@ A full-stack decentralized application (DApp) that allows users to claim free FT
 * Frontend: React (TS), Vite, Viem
 * Deployment: Hardhat Ignition & Vercel
 
+## 📊 System Architecture
+
+```mermaid
 graph TD
     User((User)) -->|Connect Wallet| ReactApp[React Frontend]
     ReactApp -->|Check Health| HealthEndpoint[/health]
