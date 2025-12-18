@@ -35,6 +35,7 @@ graph TD
     ReactApp -->|requestTokens| FaucetContract[Faucet Smart Contract]
     FaucetContract -->|Transfer FTK| User
     FaucetContract -.->|"24h Rate Limit"| User
+```
 
 ## ⚙️ Local Setup
 
