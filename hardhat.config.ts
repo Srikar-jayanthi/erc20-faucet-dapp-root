@@ -35,4 +35,12 @@ export default defineConfig({
       accounts: [configVariable("SEPOLIA_PRIVATE_KEY")],
     },
   },
+  // --- UPDATED FOR ETHERSCAN VERIFICATION ---
+  // The 'verify' object is where Hardhat 3 looks for verification keys
+  verify: {
+    etherscan: {
+      // This tells Hardhat to look for "ETHERSCAN_API_KEY" in your keystore
+      apiKey: configVariable("ETHERSCAN_API_KEY"), 
+    },
+  },
 });
